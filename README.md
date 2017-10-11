@@ -1,8 +1,51 @@
-# odeum-ui
+<a href="https://github.com/odeum/odeum-ui">
+  <img alt="ODEUM Code UI Primitives" src="./logotype.png" />
+</a>
 
-## ODEUM Code UI primitives
+ODEUM UI are React UI primitives build for [ODEUM Code](https://github.com/odeum/odeum-code).
 
-React UI component primitives built with styled-components. 
+[![Build Status](https://travis-ci.org/odeum/odeum-ui.svg?branch=master)](https://travis-ci.org/odeum/odeum-ui)
+[![npm](https://img.shields.io/npm/v/odeum-ui.svg)](https://www.npmjs.com/package/odeum-ui)
+![NPM license](https://img.shields.io/npm/l/odeum-ui.svg?style=flat)
 
-Use with ODEUM Code http://odeumcode.com
+<!-- TOC -->
+
+- [1. Components](#1-components)
+- [2. Installation](#2-installation)
+- [3. Usage](#3-usage)
+
+<!-- /TOC -->
+
+# 1. Components
+ODEUM UI primitives (odeum-ui) are a collection of simple visual components build for ODEUM Code open source UI framework. All components are build with styled-components and ReactJS and the following components will be added:
+
+- Button - a simple Button component
+- Icon - Icon component
+...
+
+# 2. Installation
+```sh
+npm install odeum-ui
+yarn add odeum-ui
+```
+
+# 3. Usage
+
+```js
+import React from 'react'
+import { Button, 
+		 Icon, 
+		} from 'odeum-ui'
+
+...
+
+<Button
+  label={'Open Modal'}
+  icon='open_in_new'
+  iconSize={18}
+  color={'#3B97D3'}
+  onClick={this.openModal}
+/>
+
+```
 
