@@ -12,6 +12,7 @@ deploy:
   provider: npm
   email: cb@webhouse.dk
   api_key: $NPM_TOKEN
+  tag: next
   on:
     repo: odeum/odeum-ui
 notifications:
