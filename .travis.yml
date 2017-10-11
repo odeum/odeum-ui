@@ -11,8 +11,7 @@ deploy:
   skip_cleanup: true
   provider: npm
   email: cb@webhouse.dk
-  api_key:
-    secure: $NPM_TOKEN
+  api_key: $NPM_TOKEN
   on:
     repo: odeum/odeum-ui
 notifications:
