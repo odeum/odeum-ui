@@ -1,25 +1,20 @@
 sudo: false
-
 language: node_js
-
 node_js:
 - stable
-
 branches:
   only:
   - master
-
 script:
 - yarn build
-
 deploy:
   skip_cleanup: true
   provider: npm
   email: cb@webhouse.dk
-  api_key: $NPM_TOKEN
+  api_key:
+    secure: $NPM_TOKEN
   on:
     repo: odeum/odeum-ui
-
 notifications:
   email: true
   slack:
