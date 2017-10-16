@@ -4451,6 +4451,17 @@ obuf@^1.0.0, obuf@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.1.tgz#104124b6c602c6796881a042541d36db43a5264e"
 
+odeum-primitives@^0.1.26:
+  version "0.1.26"
+  resolved "https://registry.yarnpkg.com/odeum-primitives/-/odeum-primitives-0.1.26.tgz#a304525e5fa75d6833f1bf8a3a49553ad5268799"
+  dependencies:
+    polished "^1.8.0"
+    react "^16.0.0"
+    react-dom "^16.0.0"
+    react-icons "^2.2.7"
+    react-modal "^3.0.0"
+    styled-components "^2.1.2"
+
 odeum-ui@^0.1.10:
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/odeum-ui/-/odeum-ui-0.1.10.tgz#41c58993f516f105daf92f1ea66abf964fba9571"
