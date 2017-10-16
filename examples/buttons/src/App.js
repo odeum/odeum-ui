@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import { Button } from 'odeum-ui'
-import { Heading } from 'odeum-primitives'
+import { Heading, Text } from 'odeum-primitives'
 
 class App extends Component {
 	render() {
@@ -12,8 +12,8 @@ class App extends Component {
 					<img src={logo} className="App-logo" alt="logo" />
 					<Heading>ODEUM UI - Buttons Example</Heading>
 				</header>
-				<p className="App-intro">ODEUM UI is a UI primitives component library build for use with ODEUM Code. To get started, edit <code>src/App.js</code> and save to reload.
-				</p>
+				<Text className="App-intro">ODEUM UI is a UI primitives component library build for use with ODEUM Code. To get started, edit <code>src/App.js</code> and save to reload.
+				</Text>
 				
 				<Button
 					label={'Send Mail'}
@@ -134,6 +134,8 @@ class App extends Component {
 					iconSize={18}
 					color={'#000'}
 					isDisabled={true}
+					active={false}
+					inactiveColor={'#006CB2'}
 				/>
 
 				<Button
