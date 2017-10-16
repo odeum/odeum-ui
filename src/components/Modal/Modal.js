@@ -4,46 +4,43 @@ import { StyledModal, StyledModalHeader, StyledModalContent, StyledModalHeaderIc
 import Icon from '../Icon/Icon'
 import { MODAL_ICON } from '../../utils/colors'
 
-
 class Modal extends Component {
 
 	render() {
 
 		const { isOpen, onAfterOpen, onRequestClose, closeTimeoutMS, style, render, overlayScroll, width, icon, label, shouldCloseOnOverlayClick } = this.props
 
-		return (
-			<div>
-				<StyledModal
-					isOpen={isOpen}
-					onAfterOpen={onAfterOpen}
-					closeTimeoutMS={closeTimeoutMS}
-					onRequestClose={onRequestClose}
-					contentLabel={label}
-					style={style}
-					overlayScroll={overlayScroll}
-					width={width}
-					shouldCloseOnOverlayClick={shouldCloseOnOverlayClick}>
+		return (			
+			<StyledModal
+				isOpen={isOpen}
+				onAfterOpen={onAfterOpen}
+				closeTimeoutMS={closeTimeoutMS}
+				onRequestClose={onRequestClose}
+				contentLabel={label}
+				style={style}
+				overlayScroll={overlayScroll}
+				width={width}
+				shouldCloseOnOverlayClick={shouldCloseOnOverlayClick}>
 
-					<StyledModalHeader>
+				<StyledModalHeader>
 
-						<StyledModalHeaderIcon>
-							<Icon icon={icon} iconSize={30} color={MODAL_ICON} active={true} />
-						</StyledModalHeaderIcon>
+					<StyledModalHeaderIcon>
+						<Icon icon={icon} iconSize={30} color={MODAL_ICON} active={true} />
+					</StyledModalHeaderIcon>
 
-						<StyledModalHeaderTitle>{label}</StyledModalHeaderTitle>
+					<StyledModalHeaderTitle>{label}</StyledModalHeaderTitle>
 
-						<StyledModalHeaderClose onClick={onRequestClose}>
-							<Icon icon={'close'} iconSize={30} color={MODAL_ICON} active={true} />
-						</StyledModalHeaderClose>
+					<StyledModalHeaderClose onClick={onRequestClose}>
+						<Icon icon={'close'} iconSize={30} color={MODAL_ICON} active={true} />
+					</StyledModalHeaderClose>
 
-					</StyledModalHeader>
+				</StyledModalHeader>
 
-					<StyledModalContent>
-						{render()}
-					</StyledModalContent>
+				<StyledModalContent>
+					{render()}
+				</StyledModalContent>
 
-				</StyledModal>
-			</div>
+			</StyledModal>
 		)
 	}
 }
