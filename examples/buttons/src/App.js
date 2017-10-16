@@ -1,19 +1,19 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
-import './App.css'
+// import logo from './logo.svg'
+import { Logo, Header } from './AppStyles'
 import { Button } from 'odeum-ui'
-import { Heading, Text } from 'odeum-primitives'
+import { Heading } from 'odeum-primitives'
 
 class App extends Component {
 	render() {
 		return (
-			<div className="App">
-				<header className="App-header">
-					<img src={logo} className="App-logo" alt="logo" />
+			<div>
+				<Header>					
+					<Logo />
 					<Heading>ODEUM UI - Buttons Example</Heading>
-				</header>
-				<Text className="App-intro">ODEUM UI is a UI primitives component library build for use with ODEUM Code. To get started, edit <code>src/App.js</code> and save to reload.
-				</Text>
+				</Header>
+				<p>ODEUM UI is a UI primitives component library build for use with ODEUM Code. To get started, edit <code>src/App.js</code> and save to reload.
+				</p>
 				
 				<Button
 					label={'Send Mail'}
