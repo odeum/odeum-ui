@@ -12,13 +12,13 @@ const appLogoSpin = keyframes`
 	}
 `
 
-export const Logo = () => <LogoImage src={logo} alt={'ODEUM Code logo'} />
-	
-
 const LogoImage = styled.img`
 	  animation: ${appLogoSpin} infinite 7s linear;
-	  height: 100px;
+	  height: ${(props) => props.size || '100px'};
 `
+
+export const Logo = (props) => <LogoImage src={logo} size={props.size} alt={'ODEUM Code logo'} />
+
 
 export const Header = styled.div`
 	background-color: #222;

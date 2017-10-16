@@ -9,7 +9,7 @@ class App extends Component {
 		return (
 			<div>
 				<Header>					
-					<Logo />
+					<Logo size={'100px'} />
 					<Heading>ODEUM UI - Buttons Example</Heading>
 				</Header>
 				<p>ODEUM UI is a UI primitives component library build for use with ODEUM Code. To get started, edit <code>src/App.js</code> and save to reload.
