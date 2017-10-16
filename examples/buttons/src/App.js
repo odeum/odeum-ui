@@ -12,8 +12,8 @@ class App extends Component {
 					<Logo size={'100px'} />
 					<Heading>ODEUM UI - Buttons Example</Heading>
 				</Header>
-				<p>ODEUM UI is a UI primitives component library build for use with ODEUM Code. To get started, edit <code>src/App.js</code> and save to reload.
-				</p>
+				<p>ODEUM UI (odeum-ui) are a collection of simple visual component primitives build for ODEUM Code UI framework. All components are build with styled-components and ReactJS</p>
+				<p>To get started, edit <b>src/App.js</b> and save to reload.</p>
 				
 				<Button
 					label={'Send Mail'}
