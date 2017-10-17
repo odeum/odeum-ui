@@ -3,7 +3,7 @@ import { transparentize, darken, rgba } from 'polished'
 import { BUTTON_TEXT } from '../../utils/colors'
 
 export const StyledButtonContainer = styled.div`
-	height:${({ size }) => sizes[size].height};
+	height: ${({ size }) => sizes[size].height};
 	margin: 0.3rem 0.4rem 0.3rem 0.4rem;
 `
 

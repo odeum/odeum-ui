@@ -23,8 +23,7 @@ class App extends Component {
 						label={'Send Mail'}
 						icon='mail_outline'
 						iconSize={18}
-						color={'#3B97D3'}
-					
+						color={'#3B97D3'}					
 					/>
 
 					<Button
