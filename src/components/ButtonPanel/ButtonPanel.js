@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import StyledButtonPanel from './ButtonPanelStyles'
 
 
-export default class ButtonPanel extends Component {
+class ButtonPanel extends Component {
 	render() {
 		const { content, children, ...styles } = this.props // (...styles rest operator passes down all props)
 		return (
@@ -42,3 +42,5 @@ ButtonPanel.defaultProps = {
 		margin: '3px',
 	}
 }
+
+export default ButtonPanel

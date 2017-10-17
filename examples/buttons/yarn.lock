@@ -2111,7 +2111,7 @@ es-to-primitive@^1.1.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.1"
 
-es5-ext@^0.10.14, es5-ext@^0.10.9, es5-ext@~0.10.14:
+es5-ext@^0.10.14, es5-ext@^0.10.35, es5-ext@^0.10.9, es5-ext@~0.10.14:
   version "0.10.35"
   resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.35.tgz#18ee858ce6a3c45c7d79e91c15fcca9ec568494f"
   dependencies:
@@ -2119,12 +2119,12 @@ es5-ext@^0.10.14, es5-ext@^0.10.9, es5-ext@~0.10.14:
     es6-symbol "~3.1.1"
 
 es6-iterator@^2.0.1, es6-iterator@~2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/es6-iterator/-/es6-iterator-2.0.1.tgz#8e319c9f0453bf575d374940a655920e59ca5512"
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/es6-iterator/-/es6-iterator-2.0.3.tgz#a7de889141a05a94b0854403b2d0a0fbfa98f3b7"
   dependencies:
     d "1"
-    es5-ext "^0.10.14"
-    es6-symbol "^3.1"
+    es5-ext "^0.10.35"
+    es6-symbol "^3.1.1"
 
 es6-map@^0.1.3:
   version "0.1.5"
@@ -2151,7 +2151,7 @@ es6-set@~0.1.5:
     es6-symbol "3.1.1"
     event-emitter "~0.3.5"
 
-es6-symbol@3.1.1, es6-symbol@^3.1, es6-symbol@^3.1.1, es6-symbol@~3.1.1:
+es6-symbol@3.1.1, es6-symbol@^3.1.1, es6-symbol@~3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/es6-symbol/-/es6-symbol-3.1.1.tgz#bf00ef4fdab6ba1b46ecb7b629b4c7ed5715cc77"
   dependencies:
@@ -3263,8 +3263,8 @@ ipaddr.js@1.5.2:
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.5.2.tgz#d4b505bde9946987ccf0fc58d9010ff9607e3fa0"
 
 ipaddr.js@^1.5.2:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.5.3.tgz#ec68539dd70ff0990c3195ab7ec43124a83df589"
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.5.4.tgz#962263d9d26132956fc5c630b638a30d3cdffc14"
 
 is-absolute-url@^2.0.0:
   version "2.1.0"
@@ -4462,9 +4462,9 @@ odeum-primitives@^0.1.26:
     react-modal "^3.0.0"
     styled-components "^2.1.2"
 
-odeum-ui@^0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/odeum-ui/-/odeum-ui-0.1.10.tgz#41c58993f516f105daf92f1ea66abf964fba9571"
+odeum-ui@^0.1.15:
+  version "0.1.15"
+  resolved "https://registry.yarnpkg.com/odeum-ui/-/odeum-ui-0.1.15.tgz#64287ad41e285c46853e9936ceb13d4e509d3fd9"
   dependencies:
     polished "^1.8.0"
     react "^16.0.0"
