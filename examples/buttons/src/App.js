@@ -4,12 +4,13 @@ import { Logo, Header } from './AppStyles'
 import { Button, ButtonPanel } from 'odeum-ui'
 import { Heading } from 'odeum-primitives'
 
+
 class App extends Component {
 	render() {
 		return (
 			<div>
 				<Header>					
-					<Logo size={'100px'} />
+					<Logo size={'100px'} rotate={true} />
 					<Heading>ODEUM UI - Buttons Example</Heading>
 				</Header>
 				
@@ -17,7 +18,7 @@ class App extends Component {
 				<p>To get started, edit <b>src/App.js</b> and save to reload.</p>
 				
 				 
-				<ButtonPanel debug={true} >					
+				<ButtonPanel justify='center' align='center' direction='row' wrap='wrap' height='auto'>
 					<Button
 						label={'Send Mail'}
 						icon='mail_outline'
@@ -31,13 +32,6 @@ class App extends Component {
 						icon='check_circle'
 						iconSize={18}
 						color={'#34495D'}
-					/>
-
-					<Button
-						label={'Laptop Settings'}
-						icon='laptop_mac'
-						iconSize={18}
-						color={'#81C1EA'}
 					/>
 
 					<Button
@@ -80,13 +74,6 @@ class App extends Component {
 						icon='cloud_upload'
 						iconSize={18}
 						color={'#25B89A'}
-					/>
-
-					<Button
-						label={'Reports'}
-						icon='assignment_turned_in'
-						iconSize={18}
-						color={'#FF9600'}
 					/>
 
 					<Button
@@ -164,13 +151,6 @@ class App extends Component {
 						isDisabled={true}
 					/>
 
-					<Button
-						label={'Create new'}
-						icon='add_circle'
-						iconSize={32}
-						color={'#3B97D3'}
-						size={'large'}
-					/>
 				</ButtonPanel>
 			</div>
 		)

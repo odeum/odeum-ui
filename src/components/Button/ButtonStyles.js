@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import { transparentize, darken, rgba } from 'polished'
 import { BUTTON_TEXT } from '../../utils/colors'
 
-export const Div = styled.div`
+export const StyledButtonContainer = styled.div`
 	height:${({ size }) => sizes[size].height};
-	margin: 0.3rem 0.7rem 0.3rem 0.7rem;
+	margin: 0.3rem 0.4rem 0.3rem 0.4rem;
 `
 
 const StyledButton = styled.button`

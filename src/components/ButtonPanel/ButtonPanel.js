@@ -39,7 +39,7 @@ ButtonPanel.defaultProps = {
 	height: 'auto',
 	debug: false,
 	style: {
-		margin: '3px',
+		margin: '3px', // Debug panel margin
 	}
 }
 

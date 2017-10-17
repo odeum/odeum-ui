@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import logo from './logo.svg'
 
-const appLogoSpin = keyframes`
+const rotate = keyframes`
     from {
         transform: rotate(0deg);
     }
@@ -13,11 +13,22 @@ const appLogoSpin = keyframes`
 `
 
 const LogoImage = styled.img`
-	  animation: ${appLogoSpin} infinite 7s linear;
+	  animation: ${(props) => props.rotate ? `${rotate} infinite 7s linear` : '' };     
 	  height: ${(props) => props.size || '100px'};
 `
 
-export const Logo = (props) => <LogoImage src={logo} size={props.size} alt={'ODEUM Code logo'} />
+
+export const Logo = (props) => {
+	return (
+		<LogoImage 
+			src={logo} 
+			size={props.size} 
+			rotate={props.rotate} 
+			alt={'ODEUM Code logo'} />
+	)
+}
+
+
 
 
 export const Header = styled.div`

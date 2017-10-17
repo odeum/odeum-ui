@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { BUTTON_DEFAULT, BUTTON_TEXT, ICON_DEFAULT_COLOR } from '../../utils/colors'
 import Icon from '../Icon/Icon'
-import StyledButton, { StyledButtonIconText, StyledButtonText, Div } from './ButtonStyles'
+import StyledButton, { StyledButtonIconText, StyledButtonText, StyledButtonContainer } from './ButtonStyles'
 
 
 //TODO: switch buttonType, sizes, fonts, and colors from theme!!!
@@ -27,7 +27,7 @@ class Button extends Component {
 			_hasIcon = true
 			_hasIconText = _hasText
 			return (
-				<Div size={size}>
+				<StyledButtonContainer size={size}>
 					<StyledButton 
 						id={id} 
 						onClick={onClick} 
@@ -52,11 +52,11 @@ class Button extends Component {
 						<StyledButtonIconText size={size}>{label}</StyledButtonIconText>
 
 					</StyledButton>
-				</Div>
+				</StyledButtonContainer>
 			)
 		}
 		return (
-			<Div size={size}>
+			<StyledButtonContainer size={size}>
 				<StyledButton 
 					id={id} 
 					onClick={onClick} 
@@ -68,7 +68,7 @@ class Button extends Component {
 					<StyledButtonText size={size}>{label}</StyledButtonText>
 
 				</StyledButton>
-			</Div>
+			</StyledButtonContainer>
 		)
 
 
