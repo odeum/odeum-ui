@@ -28,13 +28,13 @@ export const Logo = (props) => {
 	)
 }
 
-
-
-
 export const Header = styled.div`
 	background-color: #222;
-	height: 210px;
+	height: 260px;
 	padding: 20px;
 	color: white;
 `
 
+export const BadgeImage = styled.img`
+
+`

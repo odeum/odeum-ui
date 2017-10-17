@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import logo from './logo.svg'
-import { Logo, Header } from './AppStyles'
+import { Logo, Header, BadgeImage } from './AppStyles'
 import { Button, ButtonPanel } from 'odeum-ui'
 import { Heading } from 'odeum-primitives'
 
@@ -12,12 +12,16 @@ class App extends Component {
 				<Header>					
 					<Logo size={'100px'} rotate={true} />
 					<Heading>ODEUM UI - Buttons Example</Heading>
+					<BadgeImage src={'https://travis-ci.org/odeum/odeum-ui.svg?branch=master'}/>
+					<BadgeImage src={'https://img.shields.io/npm/v/odeum-ui.svg'} />
+					<BadgeImage src={'https://img.shields.io/npm/l/odeum-ui.svg?style=flat'} />
 				</Header>
+
 				
 				<p>ODEUM UI (odeum-ui) are a collection of simple visual component primitives build for ODEUM Code UI framework. All components are build with styled-components and ReactJS</p>
 				<p>To get started, edit <b>src/App.js</b> and save to reload.</p>
 				
-				 
+
 				<ButtonPanel justify='center' align='center' direction='row' wrap='wrap' height='auto'>
 					<Button
 						label={'Send Mail'}
