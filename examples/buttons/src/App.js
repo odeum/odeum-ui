@@ -12,6 +12,7 @@ class App extends Component {
 					<Logo size={'100px'} />
 					<Heading>ODEUM UI - Buttons Example</Heading>
 				</Header>
+				
 				<p>ODEUM UI (odeum-ui) are a collection of simple visual component primitives build for ODEUM Code UI framework. All components are build with styled-components and ReactJS</p>
 				<p>To get started, edit <b>src/App.js</b> and save to reload.</p>
 				
@@ -20,6 +21,7 @@ class App extends Component {
 					icon='mail_outline'
 					iconSize={18}
 					color={'#3B97D3'}
+					
 				/>
 
 				<Button

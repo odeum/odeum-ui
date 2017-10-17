@@ -4,12 +4,7 @@
         "commonjs": true,
         "es6": true,
         "node": true
-	},
-	"plugins": [
-		"react",
-		"jsx-a11y",
-		"import"
-	],
+    },
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -34,7 +29,14 @@
         "space-before-blocks": "error",
         "arrow-spacing": "error",
 		"react/display-name": 0,
-		"jsx-a11y/href-no-hash": 0
+		"jsx-a11y/href-no-hash": 0,
+		"react/jsx-no-bind": [2,
+			{
+				"ignoreRefs": true,
+				"allowArrowFunctions": false,
+				"allowBind": false
+			}
+		]
     },
        "extends": [
         "react-app"
