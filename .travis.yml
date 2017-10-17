@@ -13,6 +13,7 @@ branches:
 
 script:
 - npm run build
+- npm publish
 
 deploy:
   skip_cleanup: true
