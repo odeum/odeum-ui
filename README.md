@@ -20,7 +20,7 @@ ODEUM UI are a React UI primitives component library build for [ODEUM Code](http
 ODEUM UI primitives (odeum-ui) are a collection of simple visual components build for ODEUM Code open source UI framework. All components are build with styled-components and ReactJS and the following components will be added:
 
 - Button - Button component
-- ButtonPanel - Button panel for wrapping and aligning multiple buttons in a row or a column (coming soon ...)
+- ButtonPanel - Button panel for wrapping and aligning multiple buttons in a row or a column
 - Icon - Icon helper component, uses material-design icons from react-icons
 - Modal - Styled modal window based upon react-modal
 ...
