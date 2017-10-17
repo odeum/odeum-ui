@@ -15,7 +15,7 @@ script:
 - npm run build
 
 deploy:
-  skip_cleanup: false
+  skip_cleanup: true
   provider: npm
   email: cb@webhouse.dk
   api_key: $NPM_TOKEN
