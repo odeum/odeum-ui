@@ -4462,9 +4462,9 @@ odeum-primitives@^0.1.26:
     react-modal "^3.0.0"
     styled-components "^2.1.2"
 
-odeum-ui@^0.1.18:
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/odeum-ui/-/odeum-ui-0.1.18.tgz#167b3f1c5d30c0c6996d1ec4c6ed60c34cd6c675"
+odeum-ui@latest:
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/odeum-ui/-/odeum-ui-0.1.19.tgz#6b7c09d624159efaffe5fd7cf956c1649ba8eebe"
   dependencies:
     polished "^1.8.0"
     react "^16.0.0"
