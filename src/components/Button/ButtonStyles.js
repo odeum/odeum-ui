@@ -44,7 +44,7 @@ const StyledButton = styled.button`
 // Button with icon or icon and text
 export const StyledButtonIconText = styled.span`
 	color: ${BUTTON_TEXT};
-	font-family: 'Source Sans Pro';
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     font-size: ${({ size }) => sizes[size].fontSize};
     font-weight: 300;
 	font-style: normal; 
@@ -53,7 +53,7 @@ export const StyledButtonIconText = styled.span`
 // Button with text and no icon
 export const StyledButtonText = styled.span`
 	color: ${BUTTON_TEXT};
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     font-size: ${({ size }) => sizes[size].fontSize};
     font-weight: 300;
 	font-style: normal; 
