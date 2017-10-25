@@ -24,6 +24,9 @@ ODEUM UI primitives (odeum-ui) are a collection of simple visual components buil
 - Icon - Icon helper component, uses material-design icons from react-icons
 - Modal - Styled modal window based upon react-modal
 - ToggleSwitch - <input> styled as a toggle switch
+- Checkbox (in the lab)
+- Radiobutton (in the lab)
+- OnOff - (in the lab)
 ...
 
 # 2. Installation
@@ -36,7 +39,12 @@ yarn add odeum-ui
 
 ```js
 import React from 'react'
-import { Button, ButtonPanel, Icon, Modal, ToggleSwitch } from 'odeum-ui'
+import { 
+	Button, 
+	ButtonPanel, 
+	Icon, 
+	Modal, 
+	ToggleSwitch } from 'odeum-ui'
 
 ...
 
