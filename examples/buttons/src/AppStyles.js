@@ -1,8 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
-import logo from './logo.svg'
+// import logo from './logo.svg'
 
-const rotateLogo = keyframes`
+const rotateAnimation = keyframes`
     from {
         transform: rotate(0deg);
     }
@@ -13,20 +14,28 @@ const rotateLogo = keyframes`
 `
 
 const LogoImage = styled.img`
-	  animation: ${(props) => props.rotate ? `${rotateLogo} infinite 7s linear` : '' };     
+	  animation: ${(props) => props.rotateLogo && `${rotateAnimation} infinite 7s linear`};
 	  height: ${(props) => props.size || '100px'};
 `
-
 
 export const Logo = (props) => {
 	return (
 		<LogoImage 
-			src={logo} 
+			src={'logo.svg'} 
 			size={props.size} 
-			rotate={props.rotate} 
+			rotateLogo={props.rotateLogo}
 			alt={'ODEUM Code logo'} />
 	)
 }
+
+Logo.propTypes = {
+	rotateLogo: PropTypes.bool,
+	size: PropTypes.string,
+	src: PropTypes.string,
+	alt: PropTypes.string
+}
+
+
 
 export const Header = styled.div`
 	background-color: #222;
@@ -34,6 +43,13 @@ export const Header = styled.div`
 	padding: 20px;
 	color: white;
 `
+
+export const Content = styled.div`
+	background-color: #FFF;
+	margin-left: 5px;
+	margin-right: 5px;
+`
+
 
 export const BadgeImage = styled.img`
 
