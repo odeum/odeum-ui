@@ -46,7 +46,7 @@ Icon.defaultProps = {
 	active: true,
 	iconColor: ICON_DEFAULT_COLOR,
 	style: {
-		marginRight: '8px'
+		marginRight: '0px'
 	}
 }
 
