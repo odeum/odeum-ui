@@ -52,7 +52,7 @@ export const StyledModalHeader = styled.div`
     width: 100%;
     height: 60px;
     background-color: ${MODAL_HEADER};
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 2.0rem;
     font-weight: 300;
     color: ${MODAL_TITLE};
@@ -86,7 +86,7 @@ export const StyledModalContent = styled.div`
     padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 40px;
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
     font-weight: 300;
     /* height: calc(100% - 90px); */

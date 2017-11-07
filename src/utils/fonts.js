@@ -1,8 +1,8 @@
-export const MAIN = 'Source Sans Pro'
-export const PRIMARY = 'Source Sans Pro'
-export const DEFAULT = 'Source Sans Pro'
+export const MAIN = 'Helvetica'
+export const PRIMARY = 'Helvetica'
+export const DEFAULT = 'Helvetica'
 
-export const NORMAL = 'Source Sans Pro'
+export const NORMAL = 'Helvetica'
 
 export const SIZE_DEFAULT = '15px'
 export const SIZE_EXTRA_SMALL = '7px'
