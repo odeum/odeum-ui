@@ -1,5 +1,6 @@
 export { default as Icon } from './components/Icon/Icon'
 export { default as Button } from './components/Button/Button'
+export { default as LinkButton } from './components/LinkButton/LinkButton'
 export { default as Modal } from './components/Modal/Modal'
 export { default as ButtonPanel } from './components/ButtonPanel/ButtonPanel'
 export { default as ToggleSwitch } from './components/ToggleSwitch/ToggleSwitch'
