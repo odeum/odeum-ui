@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const LinkButton = (props) => {
 	if (props.route) {
 		return (
-			<Link to={props.route}>
+			<Link to={props.route} {...props}>
 				<Button {...props} />
 			</Link>
 		)

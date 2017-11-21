@@ -20,7 +20,9 @@ class Modal extends Component {
 				style={style}
 				overlayScroll={overlayScroll}
 				width={width}
-				shouldCloseOnOverlayClick={shouldCloseOnOverlayClick}>
+				shouldCloseOnOverlayClick={shouldCloseOnOverlayClick}
+				{...this.props}
+			>
 
 				<StyledModalHeader>
 

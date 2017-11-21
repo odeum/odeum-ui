@@ -37,7 +37,9 @@ class Button extends Component {
 						hasIcon={_hasIcon} 
 						hasText={_hasText} 
 						hasIconText={_hasIconText} 
-						size={size}>
+						size={size}
+						{...this.props}
+					>
 
 						<Icon 
 							icon={icon} 
@@ -63,7 +65,9 @@ class Button extends Component {
 					color={color} 
 					isDisabled={isDisabled} 
 					disabledColor={disabledColor} 
-					size={size}>
+					size={size}
+					{...this.props}
+				>
 
 					<StyledButtonText size={size}>{label}</StyledButtonText>
 
