@@ -4,7 +4,8 @@ import { BUTTON_TEXT } from '../../utils/colors'
 
 export const StyledButtonContainer = styled.div`
 	height: ${({ size }) => sizes[size].height};
-	margin: 0.3rem 0.4rem 0.3rem 0.4rem;
+	/* margin: 0.3rem 0.4rem 0.3rem 0.4rem; */
+	margin: ${(props) => props.margin ? props.margin : '0.3rem 0.4rem 0.3rem 0.4rem'};
 `
 
 const StyledButton = styled.button`
