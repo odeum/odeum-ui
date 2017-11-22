@@ -19,7 +19,7 @@ class Button extends Component {
 	}
 
 	render() {
-		const { id, label, icon, iconSize, color, disabledColor, active, iconColor, style, size, isDisabled, onClick } = this.props
+		const { id, label, icon, iconSize, color, disabledColor, active, iconColor, style, size, isDisabled, onClick, margin } = this.props
 		let _hasIcon
 		let _hasText = label
 		let _hasIconText
@@ -27,7 +27,7 @@ class Button extends Component {
 			_hasIcon = true
 			_hasIconText = _hasText
 			return (
-				<StyledButtonContainer size={size}>
+				<StyledButtonContainer size={size} margin={margin}>
 					<StyledButton 
 						id={id} 
 						onClick={onClick} 
