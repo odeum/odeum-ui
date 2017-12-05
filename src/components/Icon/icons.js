@@ -587,5 +587,15 @@ export const icons = {
 	wifi_off: {
 		name: 'wifi_off',
 		component: Icons.MdSignalWifiOff,
+	},
+
+	thumb_up: {
+		name: 'thumb_up',
+		component: Icons.MdThumbUp,
+	},	
+	
+	thumb_down: {
+		name: 'thumb_down',
+		component: Icons.MdThumbDown,
 	},	
 }
