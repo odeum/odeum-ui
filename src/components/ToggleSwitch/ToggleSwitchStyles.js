@@ -64,7 +64,7 @@ const sizes = {
 		height: '26px',
 		sliderWidth: '18px',
 		sliderHeight: '18px',		
-		transform: '25px' // Goes up when other values goes down
+		transform: '25px' // Goes up when other values are lowered
 	},
 	medium: {
 		width: '61px',
