@@ -20,7 +20,7 @@ export const StyledToggleSwitch = styled.label`
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: #ECF0F1;
+		background-color: #E3E5E5;
 		transition: .4s;
 		border-radius: 4px;
 	}

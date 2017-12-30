@@ -1,10 +1,6 @@
 {
 	"name": "odeum-ui",
-<<<<<<< HEAD
-	"version": "0.1.36",
-=======
-	"version": "0.1.35",
->>>>>>> 4fea570298c1926e34e4a4baf3c777b2da07527a
+	"version": "0.1.37",
 	"description": "React UI component primitives built with styled-components. Use with ODEUM Code http://odeumcode.com",
 	"main": "lib/index.js",
 	"author": "Christian Broberg",
