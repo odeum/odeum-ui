@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyledCheckbox } from 'components/Checkbox/CheckboxStyles'
+import { StyledCheckbox } from './CheckboxStyles'
 
 class Checkbox extends Component {
 
