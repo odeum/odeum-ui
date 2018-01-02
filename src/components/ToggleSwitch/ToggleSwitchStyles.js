@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-
 export const StyledToggleSwitch = styled.label`
 	position: relative;
 	display: inline-block;
@@ -13,19 +12,19 @@ export const StyledToggleSwitch = styled.label`
 		display: none;
 	}
 
-	>.slider {
+	> .slider {
 		position: absolute;
 		cursor: pointer;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: #E3E5E5;
+		background-color: #D5D5D5;
 		transition: .4s;
 		border-radius: 4px;
 	}
 
-	>.slider:before {
+	> .slider:before {
 		position: absolute;
 		content: "";
 		width: ${({ size }) => sizes[size].sliderWidth};
@@ -35,6 +34,10 @@ export const StyledToggleSwitch = styled.label`
 		background-color: white;
 		transition: .3s;
 		border-radius: 4px;
+	}
+
+	> .slider:hover {
+    	background-color: #979898;
 	}
 
 	> input:checked + .slider {
@@ -58,26 +61,26 @@ export const StyledToggleSwitch = styled.label`
 	}
 `
 
-const sizes = {	
+const sizes = {
 	small: {
 		width: '51px',
 		height: '26px',
 		sliderWidth: '18px',
-		sliderHeight: '18px',		
-		transform: '25px' // Goes up when other values are lowered
+		sliderHeight: '18px',
+		transform: '25px' // Goes up when other values goes down
 	},
 	medium: {
 		width: '61px',
 		height: '34px',
 		sliderWidth: '26px',
-		sliderHeight: '26px',		
+		sliderHeight: '26px',
 		transform: '27px'
 	},
 	large: {
 		width: '90px',
 		height: '34px',
 		sliderWidth: '26px',
-		sliderHeight: '26px',		
+		sliderHeight: '26px',
 		transform: '56px'
 	}
 }
