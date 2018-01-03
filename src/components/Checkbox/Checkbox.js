@@ -6,6 +6,7 @@ class Checkbox extends Component {
 
 	constructor(props) {
 		super(props)
+
 		this.state = {
 			isChecked: props.checked
 		}
@@ -16,7 +17,8 @@ class Checkbox extends Component {
 			{
 				isChecked: !isChecked,
 			}
-		))		
+		))
+
 		if (this.props.onChange) {
 			this.props.onChange()
 		}
@@ -38,7 +40,8 @@ class Checkbox extends Component {
 				<input 
 					type="checkbox" 
 					checked={this.state.isChecked} 
-					onChange={this.handleChange} />
+					onChange={this.handleChange} 
+				/>
 
 				<span className="checkmark"></span>
 			
@@ -49,13 +52,13 @@ class Checkbox extends Component {
 
 Checkbox.propTypes = {
 	checked: PropTypes.bool,
-	size: PropTypes.oneOf(['small', 'medium', 'large']),
+	size: PropTypes.oneOf(['small', 'medium']),
 	onChange: PropTypes.func,
 }
 
 Checkbox.defaultProps = {
 	checked: false,
-	size: 'medium'
+	size: 'small'
 }
 
 export default Checkbox
