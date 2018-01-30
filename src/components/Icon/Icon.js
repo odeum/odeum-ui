@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { icons } from './icons'
 import { ICON_DEFAULT_COLOR } from '../../utils/colors'
 
-class Icon extends Component {
+class Icon extends PureComponent {
 
 	setColor(active) {
 		if (active === true) {
