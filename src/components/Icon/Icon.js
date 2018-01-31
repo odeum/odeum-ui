@@ -1,10 +1,15 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { icons } from './icons'
 import { ICON_DEFAULT_COLOR } from '../../utils/colors'
 
-class Icon extends PureComponent {
-
+class Icon extends Component {
+	shouldComponentUpdate = (nextProps) => {
+		if (nextProps.active !== this.props.active)
+			return true
+		else
+			return false
+	}
 	setColor(active) {
 		if (active === true) {
 			return (this.props.color)
