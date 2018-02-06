@@ -12,9 +12,9 @@ class Button extends Component {
 	constructor(props) {
 		super(props)
 
-		this.state = { 
+		this.state = {
 			message: this.props.children,
-			focus: false 
+			focus: false
 		}
 	}
 
@@ -28,54 +28,54 @@ class Button extends Component {
 			_hasIconText = _hasText
 			return (
 				<StyledButtonContainer size={size} margin={margin}>
-					<StyledButton 
-						id={id} 
-						onClick={onClick} 
-						color={color} 
-						isDisabled={isDisabled} 
-						disabledColor={disabledColor} 
-						hasIcon={_hasIcon} 
-						hasText={_hasText} 
-						hasIconText={_hasIconText} 
+					<StyledButton
+						id={id}
+						onClick={onClick}
+						color={color}
+						isDisabled={isDisabled}
+						disabledColor={disabledColor}
+						hasIcon={_hasIcon}
+						hasText={_hasText}
+						hasIconText={_hasIconText}
 						size={size}
 						{...this.props}
 					>
 
-						<Icon 
-							icon={icon} 
-							iconSize={iconSize} 
-							color={BUTTON_TEXT} 
-							active={active} 
+						<Icon
+							icon={icon}
+							iconSize={iconSize}
+							color={BUTTON_TEXT}
+							active={active}
 							iconColor={iconColor}
-							style={style} 
-							
+							style={style}
+
 						/>
-						
+
 						<StyledButtonIconText size={size} hasIconText={_hasIconText}>{label}</StyledButtonIconText>
 
 					</StyledButton>
 				</StyledButtonContainer>
 			)
 		}
-		return (
-			<StyledButtonContainer size={size}>
-				<StyledButton 
-					id={id} 
-					onClick={onClick} 
-					color={color} 
-					isDisabled={isDisabled} 
-					disabledColor={disabledColor} 
-					size={size}
-					{...this.props}
-				>
+		else {
+			return (
+				<StyledButtonContainer size={size}>
+					<StyledButton
+						id={id}
+						onClick={onClick}
+						color={color}
+						isDisabled={isDisabled}
+						disabledColor={disabledColor}
+						size={size}
+						{...this.props}
+					>
 
-					<StyledButtonText size={size}>{label}</StyledButtonText>
+						<StyledButtonText size={size}>{label}</StyledButtonText>
 
-				</StyledButton>
-			</StyledButtonContainer>
-		)
-
-
+					</StyledButton>
+				</StyledButtonContainer>
+			)
+		}
 	}
 }
 
