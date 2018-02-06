@@ -4,9 +4,9 @@ import { BUTTON_TEXT } from '../../utils/colors'
 
 export const StyledButtonContainer = styled.div`
 	height: ${({ size }) => sizes[size].height};
-	/* margin: 0.3rem 0.4rem 0.3rem 0.4rem; */
 	margin: ${(props) => props.margin ? props.margin : '0.3rem 0.4rem 0.3rem 0.4rem'};
 `
+/* margin: 0.3rem 0.4rem 0.3rem 0.4rem; */
 
 const StyledButton = styled.button`
     display: flex;
@@ -17,7 +17,6 @@ const StyledButton = styled.button`
 	padding: 0px;
 	padding: ${(props) => props.hasIconText ? '0 13px 0 15px' : props.hasText ? '0 8px 0 15px' : props.hasIcon ? '0 10px' : '0 0 0 15px'};
 	height: ${({ size }) => sizes[size].height};
-	/* margin: 0.3rem 0.7rem 0.7rem 0; */
 	border: none;
     text-decoration: none;
 	cursor: ${(props) => props.isDisabled ? 'not-allowed' : 'pointer'};
@@ -50,7 +49,7 @@ export const StyledButtonIconText = styled.span`
     font-weight: 300;
 	font-style: normal; 
 	padding-right: 2px;
-	margin-left: ${({ hasIconText }) => hasIconText ? '5px' : null}
+	margin-left: ${({ hasIconText }) => hasIconText ? '5px' : null};
 `
 // Button with text and no icon
 export const StyledButtonText = styled.span`
