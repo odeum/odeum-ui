@@ -592,10 +592,44 @@ export const icons = {
 	thumb_up: {
 		name: 'thumb_up',
 		component: Icons.MdThumbUp,
-	},	
-	
+	},
+
 	thumb_down: {
 		name: 'thumb_down',
 		component: Icons.MdThumbDown,
-	},	
+	},
+
+	format_bold: {
+		name: 'format_bold',
+		component: Icons.MdFormatBold
+	},
+
+	format_italic: {
+		name: 'italic',
+		component: Icons.MdFormatItalic
+	},
+
+	format_underline: {
+		name: 'underline',
+		component: Icons.MdFormatUnderlined
+	},
+
+	format_quote: {
+		name: 'quote',
+		component: Icons.MdFormatQuote
+	},
+
+	format_list_bullet: {
+		name: 'list_bullets',
+		component: Icons.MdFormatListBulleted
+	},
+
+	format_list_number: {
+		name: 'list_numbers',
+		component: Icons.MdFormatListNumbered
+	},
+	format_header: {
+		name: 'header',
+		component: Icons.MdTextFormat
+	}
 }
