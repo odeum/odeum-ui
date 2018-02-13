@@ -24,9 +24,10 @@ class Icon extends Component {
 			const IconComponent = icons[icon].component
 			return <IconComponent size={iconSize} color={this.setColor(active)} style={style} />
 		}
-		catch{
+		catch (e) {
 
 			console.warn('Icon ' + this.props.icon + ' does not exists')
+			console.error(e)
 			const IconComponent = icons['info'].component
 			return < IconComponent size={iconSize} color={this.setColor(active)} style={style} />
 		}
