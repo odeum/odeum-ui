@@ -631,5 +631,21 @@ export const icons = {
 	format_header: {
 		name: 'header',
 		component: Icons.MdTextFormat
+	},
+	format_align_center: {
+		name: 'format_align_center',
+		component: Icons.MdFormatAlignCenter
+	},
+	format_align_right: {
+		name: 'format_align_right',
+		component: Icons.MdFormatAlignRight
+	},
+	format_align_left: {
+		name: 'format_align_left',
+		component: Icons.MdFormatAlignLeft
+	},
+	format_align_justify: {
+		name: 'format_align_justify',
+		component: Icons.MdFormatAlignJustify
 	}
 }
