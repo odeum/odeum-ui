@@ -647,5 +647,9 @@ export const icons = {
 	format_align_justify: {
 		name: 'format_align_justify',
 		component: Icons.MdFormatAlignJustify
+	},
+	location: {
+		name: 'location_on',
+		component: Icons.MdLocationOn
 	}
 }
