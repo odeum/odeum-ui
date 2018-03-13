@@ -651,5 +651,13 @@ export const icons = {
 	location: {
 		name: 'location_on',
 		component: Icons.MdLocationOn
+	},
+	sort: {
+		name:'sort',
+		component: Icons.MdSort
+	},
+	sort_by_alpha:{
+		name:'sort_by_alpha',
+		component: Icons.MdSortByAlpha
 	}
 }
