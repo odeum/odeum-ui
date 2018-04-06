@@ -22,7 +22,7 @@ class Icon extends Component {
 		const { icon, iconSize, active, style } = this.props
 		try {
 			const IconComponent = icons[icon].component
-			return <IconComponent size={iconSize} color={this.setColor(active)} style={style} />
+			return <IconComponent size={iconSize} color={active !== undefined ? this.setColor(active): 'inherit' } style={style} />
 		}
 		catch (e) {
 
