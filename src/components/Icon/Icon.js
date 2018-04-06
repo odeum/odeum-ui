@@ -17,12 +17,23 @@ class Icon extends Component {
 			return (this.props.iconColor)
 		}
 	}
+	setAllColors() {
+		if (this.props.active)
+			return this.props.activeColor
+		else {
 
+			if (this.props.hoverColor)
+				return this.props.hoverColor
+			else {
+				return this.props.color
+			}
+		}
+	}
 	render() {
 		const { icon, iconSize, active, style } = this.props
 		try {
 			const IconComponent = icons[icon].component
-			return <IconComponent size={iconSize} color={active !== undefined ? this.setColor(active): 'inherit' } style={style} />
+			return <IconComponent size={iconSize} color={this.setAllColors()} style={style} />
 		}
 		catch (e) {
 
@@ -41,7 +52,7 @@ Icon.propTypes = {
 	iconSize: PropTypes.number,
 	color: PropTypes.string,
 	active: PropTypes.bool,
-	iconColor: PropTypes.string,
+	activeColor: PropTypes.string,
 	style: PropTypes.shape({
 		marginRight: PropTypes.string
 	})
@@ -57,7 +68,7 @@ Icon.defaultProps = {
 	icon: '',
 	iconSize: 18,
 	color: ICON_DEFAULT_COLOR,
-	active: true,
+	active: undefined,
 	iconColor: ICON_DEFAULT_COLOR,
 	style: {
 		marginRight: '0px'
