@@ -592,10 +592,72 @@ export const icons = {
 	thumb_up: {
 		name: 'thumb_up',
 		component: Icons.MdThumbUp,
-	},	
-	
+	},
+
 	thumb_down: {
 		name: 'thumb_down',
 		component: Icons.MdThumbDown,
-	},	
+	},
+
+	format_bold: {
+		name: 'format_bold',
+		component: Icons.MdFormatBold
+	},
+
+	format_italic: {
+		name: 'italic',
+		component: Icons.MdFormatItalic
+	},
+
+	format_underline: {
+		name: 'underline',
+		component: Icons.MdFormatUnderlined
+	},
+
+	format_quote: {
+		name: 'quote',
+		component: Icons.MdFormatQuote
+	},
+
+	format_list_bullet: {
+		name: 'list_bullets',
+		component: Icons.MdFormatListBulleted
+	},
+
+	format_list_number: {
+		name: 'list_numbers',
+		component: Icons.MdFormatListNumbered
+	},
+	format_header: {
+		name: 'header',
+		component: Icons.MdTextFormat
+	},
+	format_align_center: {
+		name: 'format_align_center',
+		component: Icons.MdFormatAlignCenter
+	},
+	format_align_right: {
+		name: 'format_align_right',
+		component: Icons.MdFormatAlignRight
+	},
+	format_align_left: {
+		name: 'format_align_left',
+		component: Icons.MdFormatAlignLeft
+	},
+	format_align_justify: {
+		name: 'format_align_justify',
+		component: Icons.MdFormatAlignJustify
+	},
+	location: {
+		name: 'location_on',
+		component: Icons.MdLocationOn
+	},
+	sort: {
+		name:'sort',
+		component: Icons.MdSort
+	},
+	sort_by_alpha:{
+		name:'sort_by_alpha',
+		component: Icons.MdSortByAlpha
+	}
 }

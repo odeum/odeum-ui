@@ -4,7 +4,12 @@ import { icons } from './icons'
 import { ICON_DEFAULT_COLOR } from '../../utils/colors'
 
 class Icon extends Component {
-
+	shouldComponentUpdate = (nextProps) => {
+		if (nextProps.active !== this.props.active)
+			return true
+		else
+			return false
+	}
 	setColor(active) {
 		if (active === true) {
 			return (this.props.color)
@@ -12,11 +17,31 @@ class Icon extends Component {
 			return (this.props.iconColor)
 		}
 	}
+	setAllColors() {
+		if (this.props.active)
+			return this.props.activeColor
+		else {
 
+			if (this.props.hoverColor)
+				return this.props.hoverColor
+			else {
+				return this.props.color
+			}
+		}
+	}
 	render() {
 		const { icon, iconSize, active, style } = this.props
-		const IconComponent = icons[icon].component
-		return <IconComponent size={iconSize} color={this.setColor(active)} style={style} />
+		try {
+			const IconComponent = icons[icon].component
+			return <IconComponent size={iconSize} color={this.setAllColors()} style={style} />
+		}
+		catch (e) {
+
+			console.warn('Icon ' + this.props.icon + ' does not exists')
+			console.error(e)
+			const IconComponent = icons['info'].component
+			return < IconComponent size={iconSize} color={this.setColor(active)} style={style} />
+		}
 	}
 }
 
@@ -27,7 +52,7 @@ Icon.propTypes = {
 	iconSize: PropTypes.number,
 	color: PropTypes.string,
 	active: PropTypes.bool,
-	iconColor: PropTypes.string,
+	activeColor: PropTypes.string,
 	style: PropTypes.shape({
 		marginRight: PropTypes.string
 	})
@@ -43,7 +68,7 @@ Icon.defaultProps = {
 	icon: '',
 	iconSize: 18,
 	color: ICON_DEFAULT_COLOR,
-	active: true,
+	active: undefined,
 	iconColor: ICON_DEFAULT_COLOR,
 	style: {
 		marginRight: '0px'

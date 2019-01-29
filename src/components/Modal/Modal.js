@@ -10,7 +10,7 @@ class Modal extends Component {
 
 		const { isOpen, onAfterOpen, onRequestClose, closeTimeoutMS, style, render, overlayScroll, width, icon, label, shouldCloseOnOverlayClick } = this.props
 
-		return (			
+		return (
 			<StyledModal
 				isOpen={isOpen}
 				onAfterOpen={onAfterOpen}
