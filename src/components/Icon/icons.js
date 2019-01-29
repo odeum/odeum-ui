@@ -653,11 +653,11 @@ export const icons = {
 		component: Icons.MdLocationOn
 	},
 	sort: {
-		name:'sort',
+		name: 'sort',
 		component: Icons.MdSort
 	},
-	sort_by_alpha:{
-		name:'sort_by_alpha',
+	sort_by_alpha: {
+		name: 'sort_by_alpha',
 		component: Icons.MdSortByAlpha
 	}
 }
